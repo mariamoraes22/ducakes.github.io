@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuCakes - Login de Cliente 🔐</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo_ducakes.jpg" alt="Logo DuCakes" width="250">
+        <h1>Área de Login - DuCakes 🧁</h1>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="cadastro.html">Cadastro / Contato</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Aceda à sua Conta</h2>
+            <p>Insira os seus dados de acesso para gerir os seus pedidos de bolos de pote e acompanhar as suas encomendas:</p>
+
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend>Identificação do Utilizador</legend>
+
+                    <p>
+                        <label for="email_login">E-mail ou Utilizador:</label><br>
+                        <input type="email" id="email_login" name="email_login" placeholder="exemplo@email.com" required>
+                    </p>
+
+                    <p>
+                        <label for="senha_login">Palavra-passe:</label><br>
+                        <input type="password" id="senha_login" name="senha_login" minlength="6" required>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="lembrar" name="lembrar">
+                        <label for="lembrar">Lembrar dos meus dados neste dispositivo</label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Entrar</button>
+                    </p>
+                </fieldset>
+            </form>
+
+            <p>Ainda não tem uma conta? <a href="cadastro.html">Clique aqui para se cadastrar</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DuCakes - Bolos de Pote Artesanais. Todos os direitos reservados.</p>
+        <p>
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://pinterest.com" target="_blank">Pinterest</a> |
+            <a href="cadastro.html">Contato</a>
+        </p>
+        <div class="hexagon-wrapper">
+  <div class="hexagon">
+    <i class="fab fa-instagram"></i>
+  </div>
+</div>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Butterfly Hexagon</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'><link rel="stylesheet" href="./style.css">

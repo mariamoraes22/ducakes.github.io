@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuCakes - Cadastro e Contato 📝</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo_ducakes.jpg" alt="Logo DuCakes" width="250">
+        <h1>Formulário de Cadastro e Contato 🧁</h1>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="cadastro.html">Cadastro / Contato</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fale Conosco | Faça o seu Cadastro</h2>
+            <p>Preencha o formulário abaixo para se cadastrar ou enviar uma mensagem para a DuCakes:</p>
+
+            <form action="sucesso.html" method="post" enctype="multipart/form-data">
+                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" minlength="3" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Celular/Telefone:</label><br>
+                        <input type="tel" id="telefone" name="telefone" pattern="\[0-9\]{2}\s[0-9\]{5}-[0-9\]{4}" placeholder="11 99999-9999" title="Digite no formato: XX XXXXX-XXXX" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências e Atendimento</legend>
+
+                    <p>
+                        <label>Tipo de Cliente:</label><br>
+                        <input type="radio" id="cliente-novo" name="tipo_cliente" value="novo" checked>
+                        <label for="cliente-novo">Cliente Novo</label>
+                        
+                        <input type="radio" id="cliente-frequente" name="tipo_cliente" value="frequente">
+                        <label for="cliente-frequente">Cliente Frequente</label>
+                    </p>
+
+                    <p>
+                        <label for="assunto">Categoria do Assunto:</label><br>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">-- Selecione uma opção --</option>
+                            <option value="duvidas">Dúvidas sobre produtos</option>
+                            <option value="encomendas">Encomendas Especiais</option>
+                            <option value="sugestoes">Sugestões ou Elogios</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Sabores Favoritos (Interesses):</label><br>
+                        <input type="checkbox" id="sabor-brigadeiro" name="interesses[]" value="brigadeiro">
+                        <label for="sabor-brigadeiro">Brigadeiro Tradicional</label><br>
+
+                        <input type="checkbox" id="sabor-beijinho" name="interesses[]" value="beijinho">
+                        <label for="sabor-beijinho">Beijinho de Coco</label><br>
+
+                        <input type="checkbox" id="sabor-prestigio" name="interesses[]" value="prestigio">
+                        <label for="sabor-prestigio">Prestígio Gourmet</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Anexos e Mensagem</legend>
+
+                    <p>
+                        <label for="comprovante">Anexar Comprovante/Documento:</label><br>
+                        <input type="file" id="comprovante" name="comprovante" accept=".pdf,.png,.jpeg,.jpg">
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem/Comentários:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva a sua mensagem aqui..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Aceito os termos de privacidade e envio de dados.</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar Formulário</button>
+                    <button type="reset">Limpar Campos</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DuCakes - Bolos de Pote Artesanais. Todos os direitos reservados.</p>
+        <p>
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="cadastro.html">Contato</a>
+        </p>
+        <div class="hexagon-wrapper">
+  <div class="hexagon">
+    <i class="fab fa-instagram"></i>
+  </div>
+</div>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Butterfly Hexagon</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
